@@ -10,6 +10,6 @@
 </p>
 
 
-# ProductivityTools.Learning.GCPAppEngineExample
+# ProductivityTools.Learning.ReactWithFirebaseAuth
 Simplest react with firebase authentication integration 
 [tutorial](https://blog.logrocket.com/user-authentication-firebase-react-apps/) which I am using
