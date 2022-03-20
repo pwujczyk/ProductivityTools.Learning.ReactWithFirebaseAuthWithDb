@@ -1,3 +1,5 @@
+import { initializeApp } from "firebase/app";
+
 import {
     GoogleAuthProvider,
     getAuth,
@@ -17,12 +19,6 @@ import {
     addDoc,
 } from "firebase/firestore";
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyD1llzZnvhtKeb-O7GVbILicQPSENW9cJs",
     authDomain: "ptlearning-95d51.firebaseapp.com",
@@ -40,6 +36,7 @@ const db = getFirestore(app);
 const googleProvider = new GoogleAuthProvider();
 const signInWithGoogle = async () => {
     try {
+        debugger;
         const res = await signInWithPopup(auth, googleProvider);
         const user = res.user;
         const q = query(collection(db, "users"), where("uid", "==", user.uid));
@@ -102,6 +99,7 @@ const logout = () => {
 
 export {
     auth,
+    db,
     signInWithGoogle,
     logInWithEmailAndPassword,
     registerWithEmailAndPassword,
