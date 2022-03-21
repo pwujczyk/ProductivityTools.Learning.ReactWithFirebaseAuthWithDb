@@ -10,16 +10,10 @@
 </p>
 
 
-# ProductivityTools.Learning.ReactWithFirebaseAuth
-Simplest react with firebase authentication integration 
-[tutorial](https://blog.logrocket.com/user-authentication-firebase-react-apps/) which I am using
+# ProductivityTools.Learning.ReactWithFirebaseAuthWithDb
+Simplest react with firebase authentication integration. 
 
-
-offered
-```
-npx create-react-app appname
-npm install firebase react-router-dom react-firebase-hooks
-```
+This is [tutorial](https://blog.logrocket.com/user-authentication-firebase-react-apps/) which I am using. 
 
 done
 ```
